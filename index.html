@@ -578,7 +578,7 @@
 
             async scrapeProfile(url) {
                 try {
-                    const apiKey = "qZpCyKnvBz7dclOrS1SYHA"; 
+                    const apiKey = "qZpCyKnvBz7dclOrS1SYHA"; // Substitua pelo seu token real
                     const apiUrl = "https://nubela.co/proxycurl/api/v2/linkedin";
 
                     const response = await fetch(`${apiUrl}?url=${encodeURIComponent(url)}`, { 
@@ -586,7 +586,7 @@
                         headers: {
                             'Authorization': `Bearer ${apiKey}`
                         },
-                        mode: 'no-cors' // Desabilita CORS 
+                        // mode: 'no-cors' // Você pode remover essa linha se não for necessário
                     });
 
                     if (!response.ok) { 
